@@ -26,7 +26,7 @@ h1 {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   /* flex-shrink: 1; */
 }
 
@@ -76,4 +76,44 @@ h1 {
   background-color: blue;
   height: 1000px;
   width: 100%;
+}
+
+@media (max-width: 649px) {
+  .movie-card {
+    width: 100%;
+    margin: 0 10px 20px;
+  }
+
+  .search {
+    margin: 40px 175px 0 40px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .search input {
+    width: 70%;
+  }
+
+  .flx {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1199px) {
+  .movie-card {
+    width: 40%;
+    margin: 0 10px 20px;
+  }
+
+  .search {
+    margin: 40px 175px 0 40px;
+  }
+
+  .search input {
+    width: 70%;
+  }
+
+  .flx {
+    padding: 15px;
+  }
 }
