@@ -31,11 +31,16 @@ h1 {
 }
 
 .movie-card {
-  width: 20%;
-  margin: 0 10px 40px;
+  /* width: 20%; */
+  margin: 0 30px 40px;
   background-color: aliceblue;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.anc {
+  display: block;
+  width: 25%;
 }
 
 .movie-card h1 {
@@ -78,10 +83,50 @@ h1 {
   width: 100%;
 }
 
+.error-div {
+  color: red;
+  font-weight: bold;
+  font-size: 57px;
+  justify-content: center;
+  display: flex;
+  font-family: monospace;
+}
+
+.details {
+  width: 100%;
+  background: rgb(13, 0, 36);
+  background: linear-gradient(90deg, rgba(13, 0, 36, 0.745131377746411) 0%, rgba(80, 106, 7, 1) 8%, rgba(131, 25, 128, 1) 27%, rgba(0, 212, 255, 1) 75%);
+}
+
+.details-main-div {
+  width: 85%;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details img {
+  min-height: 500px;
+  display: block;
+  border: 2px solid palevioletred;
+  box-decoration-break: clone;
+}
+
+.details a {
+  color: #0000003f;
+}
+
 @media (max-width: 649px) {
   .movie-card {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 10px 20px;
+  }
+
+  .anc {
+    display: block;
+    width: 100%;
   }
 
   .search {
@@ -97,12 +142,25 @@ h1 {
   .flx {
     padding: 15px;
   }
+
+  .details-main-div {
+    display: block;
+  }
+
+  .details img {
+    margin: 0 0 20px 0;
+  }
 }
 
 @media (min-width: 650px) and (max-width: 1199px) {
   .movie-card {
-    width: 40%;
+    /* width: 40%; */
     margin: 0 10px 20px;
+  }
+
+  .anc {
+    display: block;
+    width: 40%;
   }
 
   .search {

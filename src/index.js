@@ -1,13 +1,48 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Details from "./Components/Details";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const API_LINK = "https://www.omdbapi.com?apikey=f6b2650f";
+
+const searchMoviesRoute = async (searchWord) => {
+  try {
+    const response = await fetch(`${API_LINK}&s=${searchWord}`);
+    const data = await response.json();
+
+    return data.Search;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const movies = await searchMoviesRoute("Avengers");
+let resultArr = [];
+
+if (movies) {
+  movies.map((movie) => {
+    resultArr.push({ path: "/" + movie.Title, element: <Details movie={movie} /> });
+  });
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App movies={movies} />,
+  },
+  ...resultArr,
+]);
+
+console.log(resultArr);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
+    {/* <App /> */}
   </React.StrictMode>
 );
 
