@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SouravMovieDB/static/css/main.e8dee901.css",
-    "main.js": "/SouravMovieDB/static/js/main.1f0eecd3.js",
+    "main.css": "/SouravMovieDB/static/css/main.8baefd9a.css",
+    "main.js": "/SouravMovieDB/static/js/main.6c877011.js",
     "static/js/787.b0e29ad6.chunk.js": "/SouravMovieDB/static/js/787.b0e29ad6.chunk.js",
     "index.html": "/SouravMovieDB/index.html",
-    "main.e8dee901.css.map": "/SouravMovieDB/static/css/main.e8dee901.css.map",
-    "main.1f0eecd3.js.map": "/SouravMovieDB/static/js/main.1f0eecd3.js.map",
+    "main.8baefd9a.css.map": "/SouravMovieDB/static/css/main.8baefd9a.css.map",
+    "main.6c877011.js.map": "/SouravMovieDB/static/js/main.6c877011.js.map",
     "787.b0e29ad6.chunk.js.map": "/SouravMovieDB/static/js/787.b0e29ad6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8dee901.css",
-    "static/js/main.1f0eecd3.js"
+    "static/css/main.8baefd9a.css",
+    "static/js/main.6c877011.js"
   ]
 }
